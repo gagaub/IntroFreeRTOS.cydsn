@@ -1,0 +1,2 @@
+D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\TopDesign\TopDesign.cysch
+D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\IntroFreeRTOS.cydwr

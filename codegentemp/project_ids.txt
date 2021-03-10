@@ -1,0 +1,6 @@
+D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\IntroFreeRTOS.cyprj|c2e67bf7-cfd6-49f7-b163-e9b1616ffb71
+D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e7f09db9-9d30-4f7d-95ba-91533c0dbc62
+C:\Users\darkvadorcb\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|00e7ae18-706f-48d0-8263-835efbf17d5a
+D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0732c2cb-599f-4990-a952-498339335235
+D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a015565f-40b3-426c-9836-c09211746cd7
+D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2c4ff618-60ca-473d-adcf-f54e81c4bfb2
