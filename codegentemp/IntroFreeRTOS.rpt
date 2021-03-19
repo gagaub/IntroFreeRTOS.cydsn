@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.385ms
+Loading plugins phase: Elapsed time ==> 0s.400ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\IntroFreeRTOS.cyprj -d CY8C6347BZI-BLD53 -s D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 2s.706ms
+Elaboration phase: Elapsed time ==> 2s.892ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.084ms
+HDL generation phase: Elapsed time ==> 0s.100ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\PsocProject
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed Mar 10 13:51:35 2021
+Thu Mar 18 21:06:22 2021
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 IntroFreeRTOS.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed Mar 10 13:51:35 2021
+Thu Mar 18 21:06:22 2021
 
 Flattening file 'D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -83,7 +83,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\PsocProject
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed Mar 10 13:51:36 2021
+Thu Mar 18 21:06:23 2021
 
 Linking 'D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -110,7 +110,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\PsocProject
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed Mar 10 13:51:36 2021
+Thu Mar 18 21:06:23 2021
 
 Linking 'D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -177,18 +177,17 @@ CYPRESS_DIR    : D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\warp
 Warp Program   : D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\IntroFreeRTOS.cyprj" -dcpsoc3 IntroFreeRTOS.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.118ms
+Warp synthesis phase: Elapsed time ==> 1s.366ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Wednesday, 10 March 2021 13:51:36
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Thursday, 18 March 2021 21:06:23
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\PsocProject\PSoC Creator\IntroFreeRTOS\IntroFreeRTOS.cydsn\IntroFreeRTOS.cyprj -d CY8C6347BZI-BLD53 IntroFreeRTOS.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.570ms
+Design parsing phase: Elapsed time ==> 0s.601ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
-Warning: mpr.M0055: Interrupt "Bouton_ISR" is driven with a logic high and the interrupt will always be asserted. (App=cydsfit)
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -197,8 +196,6 @@ Done removing unused cells.
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: \UART_1:rx(0)\, \UART_1:tx(0)\
-
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].uart_cts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].spi_select[0]. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[8].spi_select[0]. (App=cydsfit)
@@ -329,6 +326,9 @@ Design Equations
             pa_out => \UART_1:tx(0)\__PA ,
             pin_input => \UART_1:tx_wire\ ,
             pad => \UART_1:tx(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \UART_1:rx(0)\
         Attributes:
@@ -366,6 +366,9 @@ Design Equations
             pa_out => \UART_1:rx(0)\__PA ,
             fb => \UART_1:Net_1172\ ,
             pad => \UART_1:rx(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = Bouton(0)
         Attributes:
@@ -407,20 +410,6 @@ Design Equations
         }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
-
-    ------------------------------------------------------------
-    Macrocell listing
-    ------------------------------------------------------------
-
-    MacroCell: Name=__ONE__, Mode=(Combinatorial)
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=1)
     </CYPRESSTAG>
     <CYPRESSTAG name="Datapath listing">
     </CYPRESSTAG>
@@ -454,7 +443,7 @@ Design Equations
 
     interrupt: Name =Bouton_ISR
         PORT MAP (
-            interrupt => __ONE__ );
+            interrupt => INDIVIDUAL_PICU_OUT_0 );
         Properties:
         {
             cy_registers = ""
@@ -473,8 +462,8 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
-Interrupts [CM0+]             :    5 :   27 :   32 : 15.63 %
-Interrupts [CM4]              :    2 :  145 :  147 :  1.36 %
+Interrupts [CM0+]             :    7 :   25 :   32 : 21.88 %
+Interrupts [CM4]              :    0 :  147 :  147 :  0.00 %
 IO                            :    5 :   73 :   78 :  6.41 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
 MCWDT                         :    0 :    2 :    2 :  0.00 %
@@ -491,7 +480,7 @@ LCD                           :    0 :    1 :    1 :  0.00 %
 SmartIO                       :    0 :    2 :    2 :  0.00 %
 TCPWM                         :    0 :   32 :   32 :  0.00 %
 UDB                           :      :      :      :        
-  Macrocells                  :    1 :   95 :   96 :  1.04 %
+  Macrocells                  :    0 :   96 :   96 :  0.00 %
   Unique P-terms              :    0 :  192 :  192 :  0.00 %
   Total P-terms               :    0 :      :      :        
   Datapath Cells              :    0 :   12 :   12 :  0.00 %
@@ -516,23 +505,24 @@ Cell                                : Block
 =========================================================================
 CY_CPUSS_SWJ_SWCLK_TCLK(0)          : [IOP=(6)][IoId=(7)]                
 CY_CPUSS_SWJ_SWDIO_TMS(0)           : [IOP=(6)][IoId=(6)]                
+\UART_1:tx(0)\                      : [IOP=(5)][IoId=(1)]                
+\UART_1:rx(0)\                      : [IOP=(5)][IoId=(0)]                
 Bouton(0)                           : [IOP=(0)][IoId=(4)]                
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
-\UART_1:SCB\                        : SCB_[FFB(SCB,0)]                   
-\UART_1:tx(0)\                      : [IOP=(0)][IoId=(3)]                
-\UART_1:rx(0)\                      : [IOP=(0)][IoId=(2)]                
+\UART_1:SCB\                        : SCB_[FFB(SCB,5)]                   
+IOSS                                : IOSS_[FFB(IOSS,0)]                 
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.6928871s
+Elapsed time ==> 0.7436474s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 3s.054ms
+Analog Placement phase: Elapsed time ==> 3s.362ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0028993 secs
+Route success=True, Iterations=1 Elapsed=0.0021242 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
@@ -545,34 +535,17 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.056ms
+Analog Code Generation phase: Elapsed time ==> 0s.053ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.9 sec.
+I2076: Total run-time: 1.0 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
-<CYPRESSTAG name="PLD Packing Summary" expanded>
-
-------------------------------------------------------------
-PLD Packing Summary
-------------------------------------------------------------
-            Resource Type : Used : Free :  Max :  % Used
-    ====================================================
-                     PLDs :    1 :   23 :   24 :   4.17%
-
-<CYPRESSTAG name="PLD Statistics">
-
-        PLD Resource Type :     Average/LAB
-    =======================================
-                   Inputs :            0.00
-                   Pterms :            0.00
-               Macrocells :            1.00
-</CYPRESSTAG>
-<CYPRESSTAG name="Packed PLD Contents">
-Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
+<CYPRESSTAG name="PLD Packing Summary">
+No PLDs were packed.
 </CYPRESSTAG>
 PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
@@ -581,7 +554,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.015ms
+Partitioning: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -591,7 +564,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :          1 :       0.00 :       1.00
+                 UDB :          0 :       0.00 :       0.00
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -604,47 +577,27 @@ UDB [UDB=(0,2)] is empty.
 UDB [UDB=(0,3)] is empty.
 UDB [UDB=(0,4)] is empty.
 UDB [UDB=(0,5)] is empty.
-UDB [UDB=(1,0)] contents:
-LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=0, #pterms=0
-{
-    [McSlotId=0]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=0]
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
+UDB [UDB=(1,0)] is empty.
 UDB [UDB=(1,1)] is empty.
 UDB [UDB=(1,2)] is empty.
 UDB [UDB=(1,3)] is empty.
 UDB [UDB=(1,4)] is empty.
 UDB [UDB=(1,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
-  Intr@ [IntrContainer=(0)][IntrId=(41)] 
-    interrupt: Name =\UART_1:SCB_IRQ\
+  Intr@ [IntrContainer=(0)][IntrId=(0)] 
+    interrupt: Name =Bouton_ISR
         PORT MAP (
-            interrupt => \UART_1:intr_wire\ );
+            interrupt => INDIVIDUAL_PICU_OUT_0 );
         Properties:
         {
             cy_registers = ""
             deepsleep_required = 0
             int_type = "10"
         }
-  Intr@ [IntrContainer=(0)][IntrId=(122)] 
-    interrupt: Name =Bouton_ISR
+  Intr@ [IntrContainer=(0)][IntrId=(46)] 
+    interrupt: Name =\UART_1:SCB_IRQ\
         PORT MAP (
-            interrupt => __ONE__ );
+            interrupt => \UART_1:intr_wire\ );
         Properties:
         {
             cy_registers = ""
@@ -684,88 +637,6 @@ Port 0 generates interrupt for logical port:
             width = 1
         }
     and contains the following IO cells:
-[IoId=2]: 
-Pin : Name = \UART_1:rx(0)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: NOSYNC
-        Out Sync Option: AUTO
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: HI_Z_ANALOG
-        VTrip: CMOS
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: INP_DIS_HI_Z
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilities: DIGITAL
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \UART_1:rx(0)\__PA ,
-        fb => \UART_1:Net_1172\ ,
-        pad => \UART_1:rx(0)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=3]: 
-Pin : Name = \UART_1:tx(0)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: CMOS
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: INP_DIS_HI_Z
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilities: DIGITAL
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \UART_1:tx(0)\__PA ,
-        pin_input => \UART_1:tx_wire\ ,
-        pad => \UART_1:tx(0)_PAD\ );
-    Properties:
-    {
-    }
-
 [IoId=4]: 
 Pin : Name = Bouton(0)
     Attributes:
@@ -808,6 +679,88 @@ Pin : Name = Bouton(0)
 
 Port 1 contains the following IO cells:
 Port 5 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = \UART_1:rx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \UART_1:rx(0)\__PA ,
+        fb => \UART_1:Net_1172\ ,
+        pad => \UART_1:rx(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = \UART_1:tx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \UART_1:tx(0)\__PA ,
+        pin_input => \UART_1:tx_wire\ ,
+        pad => \UART_1:tx(0)_PAD\ );
+    Properties:
+    {
+    }
+
 Port 6 contains the following IO cells:
 [IoId=6]: 
 Pin : Name = CY_CPUSS_SWJ_SWDIO_TMS(0)
@@ -925,7 +878,7 @@ LCD group 0: empty
 Vref group 0: empty
 LPCOMP group 0: empty
 SCB group 0: 
-    SCB @ F(SCB,0): 
+    SCB @ F(SCB,5): 
     SCB: Name =\UART_1:SCB\
         PORT MAP (
             clock => \UART_1:Net_847_ff0\ ,
@@ -974,7 +927,14 @@ CPUSS group 0:
         Properties:
         {
         }
-IOSS group 0: empty
+IOSS group 0: 
+    IOSS Block @ F(IOSS,0): 
+    IOSS: Name =IOSS
+        PORT MAP (
+            interrupt_port_0 => INDIVIDUAL_PICU_OUT_0 );
+        Properties:
+        {
+        }
 UDB group 0: empty
 IPC group 0: empty
 I2S group 0: empty
@@ -992,9 +952,10 @@ Port Configuration report
      |     |       | Interrupt |                  |                            | 
 Port | Pin | Fixed |      Type |       Drive Mode |                       Name | Connections
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-   0 |   2 |       |      NONE |      HI_Z_ANALOG |             \UART_1:rx(0)\ | FB(\UART_1:Net_1172\)
-     |   3 |       |      NONE |         CMOS_OUT |             \UART_1:tx(0)\ | In(\UART_1:tx_wire\)
-     |   4 |     * | ON_CHANGE |      RES_PULL_UP |                  Bouton(0) | 
+   0 |   4 |     * | ON_CHANGE |      RES_PULL_UP |                  Bouton(0) | 
+-----+-----+-------+-----------+------------------+----------------------------+-------------------------
+   5 |   0 |     * |      NONE |      HI_Z_ANALOG |             \UART_1:rx(0)\ | FB(\UART_1:Net_1172\)
+     |   1 |     * |      NONE |         CMOS_OUT |             \UART_1:tx(0)\ | In(\UART_1:tx_wire\)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
    6 |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
      |   7 |     * |      NONE |    RES_PULL_DOWN | CY_CPUSS_SWJ_SWCLK_TCLK(0) | FB(CPUSS_swj_swclk_tclk)
@@ -1003,32 +964,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.031ms
-Digital Placement phase: Elapsed time ==> 16s.025ms
+Digital Placement phase: Elapsed time ==> 17s.054ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "D:\Gabrielle\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "IntroFreeRTOS_r.vh2" --pcf-path "IntroFreeRTOS.pco" --des-name "IntroFreeRTOS" --dsf-path "IntroFreeRTOS.dsf" --sdc-path "IntroFreeRTOS.sdc" --lib-path "IntroFreeRTOS_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 2s.759ms
+Digital Routing phase: Elapsed time ==> 2s.671ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 1s.852ms
+Bitstream Generation phase: Elapsed time ==> 1s.859ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.015ms
+Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in IntroFreeRTOS_timing.html.
-Static timing analysis phase: Elapsed time ==> 31s.119ms
+Static timing analysis phase: Elapsed time ==> 29s.342ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.438ms
+Design database save phase: Elapsed time ==> 0s.716ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 56s.256ms
+cydsfit: Elapsed time ==> 56s.041ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 56s.256ms
-API generation phase: Elapsed time ==> 2s.850ms
-Dependency generation phase: Elapsed time ==> 0s.015ms
-Cleanup phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 56s.041ms
+API generation phase: Elapsed time ==> 2s.665ms
+Dependency generation phase: Elapsed time ==> 0s.031ms
+Cleanup phase: Elapsed time ==> 0s.000ms

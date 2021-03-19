@@ -1,6 +1,6 @@
 // ======================================================================
 // IntroFreeRTOS.v generated from TopDesign.cysch
-// 03/10/2021 at 13:51
+// 03/18/2021 at 21:06
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -342,7 +342,7 @@ endmodule
 // top
 module top ;
 
-          wire  Net_12;
+          wire  Net_14;
           wire  Net_2;
           wire  Net_10;
           wire  Net_7;
@@ -407,7 +407,14 @@ module top ;
 		#(.deepsleep_required(0),
 		  .int_type(2'b10))
 		Bouton_ISR
-		 (.int_signal(1'b1));
+		 (.int_signal(Net_14));
+
+
+
+	cy_gsref_v1_0
+		#(.guid("8C3B410E-0600-5ECF-95DD-0AF91BF8D8A7"))
+		GlobalSignal_1
+		 (.sig_out(Net_14));
 
 
 

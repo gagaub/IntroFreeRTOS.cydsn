@@ -5,10 +5,40 @@
   </Group>
   <Data key="DataVersionKey" value="2" />
   <Group key="DWRInstGuidMapping">
+    <Group key="Interrupt">
+      <Data key="3ce8a6bb-573d-4af8-8b05-6daa381d4f54" value="Bouton_ISR" />
+      <Data key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/9260d369-b684-4310-b925-f618d77b89d7" value="UART_1_SCB_IRQ" />
+    </Group>
     <Group key="Pin">
       <Data key="4cca878b-77b5-471d-8aeb-ad6925202455" value="Bouton" />
       <Data key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_1_tx" />
       <Data key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_1_rx" />
+    </Group>
+  </Group>
+  <Group key="Interrupt">
+    <Group key="3ce8a6bb-573d-4af8-8b05-6daa381d4f54">
+      <Group key="CortexM0p">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="3" />
+      </Group>
+      <Group key="CortexM4">
+        <Data key="Assigned" value="False" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/9260d369-b684-4310-b925-f618d77b89d7">
+      <Group key="CortexM0p">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="8" />
+      </Group>
+      <Group key="CortexM4">
+        <Data key="Assigned" value="False" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="-1" />
+      </Group>
     </Group>
   </Group>
   <Group key="M0S8Clock">
@@ -601,6 +631,18 @@
         <Data key="Port Format" value="0,4" />
       </Group>
     </Group>
+    <Group key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f">
+      <Group key="0">
+        <Data key="Port Format" value="5,1" />
+      </Group>
+    </Group>
+    <Group key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/b7e8018e-1ef7-49c0-b5a5-61641a03e31c">
+      <Group key="0">
+        <Data key="Port Format" value="5,0" />
+      </Group>
+    </Group>
+    <Group key="UnAssigned Pins" />
+    <Group key="Unlocked Pins" />
   </Group>
   <Group key="PlaceDir">
     <Data key="count" value="0" />
