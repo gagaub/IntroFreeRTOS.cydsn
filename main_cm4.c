@@ -29,7 +29,9 @@ void isr_bouton(void)
 
 void bouton_task(void)
 {   
-    acquis = xSemaphoreTake(bouton_semph,pdMS_TO_TICKS(20) );
+    for(;;)
+    {
+    acquis = xSemaphoreTake(bouton_semph, portMAX_DELAY);
     
     if (count%2 ==0 && acquis == true )
     {
@@ -39,13 +41,15 @@ void bouton_task(void)
         xSemaphoreGive(bouton_semph);
     }
     
-    if (count%2 !=0 && acquis == true )
+    else if (count%2 !=0 && acquis == true )
     {
         vTaskDelay(pdMS_TO_TICKS(20));
-        UART_1_PutString("\n\r Bouton appuye");
+        UART_1_PutString("\n\r Bouton relache");
         count++;
         xSemaphoreGive(bouton_semph);
     }
+    }
+    
   
 }
 
@@ -63,11 +67,11 @@ int main(void)
     bouton_semph = xSemaphoreCreateBinary(); // initialisé avant la prochaine ligne!
     NVIC_EnableIRQ(Bouton_ISR_cfg.intrSrc);
     
+    xTaskCreate(bouton_task, "TASK_BOUTON", 80, NULL,1,NULL);
+    vTaskStartScheduler();
     
     for(;;)
     {
-        
-    bouton_task();
        
     }
 }
