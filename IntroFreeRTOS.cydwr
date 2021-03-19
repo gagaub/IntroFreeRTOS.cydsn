@@ -18,24 +18,24 @@
   <Group key="Interrupt">
     <Group key="3ce8a6bb-573d-4af8-8b05-6daa381d4f54">
       <Group key="CortexM0p">
-        <Data key="Assigned" value="True" />
+        <Data key="Assigned" value="False" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="3" />
       </Group>
       <Group key="CortexM4">
-        <Data key="Assigned" value="False" />
+        <Data key="Assigned" value="True" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="-1" />
       </Group>
     </Group>
     <Group key="9c51e917-b2df-4e49-bd10-35e975ff0f7a/9260d369-b684-4310-b925-f618d77b89d7">
       <Group key="CortexM0p">
-        <Data key="Assigned" value="True" />
+        <Data key="Assigned" value="False" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="8" />
       </Group>
       <Group key="CortexM4">
-        <Data key="Assigned" value="False" />
+        <Data key="Assigned" value="True" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="-1" />
       </Group>
